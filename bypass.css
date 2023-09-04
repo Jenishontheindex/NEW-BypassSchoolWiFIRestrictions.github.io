@@ -1,0 +1,114 @@
+:root {
+    --theme:#57ABFF;
+}
+
+body { background-color: black; }
+
+iframe {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+#information {
+    background-color: lightcyan;
+    color: black;
+    font-family: /*'Cascadia code',*/ Arial, Helvetica, sans-serif;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    width: 50%;
+    height: 70%;
+    transform: translate(-50%, -50%);
+    border-radius: 20px;
+    display: none;
+}
+
+#information #title {
+    background-color: var(--theme);
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    overflow: hidden;
+}
+
+#information #body {
+    background-color: transparent;
+    border-top: 1px solid var(--theme);
+    border-bottom: 1px solid var(--theme);
+    padding: 10px;
+    position: fixed;
+    top: 100px;
+    bottom: 50px;
+    left: 20px;
+    right: 20px;
+    overflow-y: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+#information #body::-webkit-scrollbar {
+    display: none;
+}
+
+#information #ok {
+    color: black;
+    background-color: var(--theme);
+    border: 1px solid black;
+    border-radius: 4px;
+    position: fixed;
+    bottom: 25px;
+    right: 50%;
+    transform: translateX(50%);
+}
+
+#information #ok:hover {
+    color: var(--theme);
+    background-color: transparent;
+    border: 1px solid var(--theme);
+}
+
+#info {
+    color: var(--theme);
+    background-color: transparent;
+    border: 1px solid var(--theme);
+    border-radius: 4px;
+    position: fixed;
+    bottom: 25px;
+    left: 25px;
+}
+
+#info:hover {
+    color: black;
+    background-color: var(--theme);
+    border: 1px solid black;
+}
+
+.info {
+    background-color: transparent;
+    border-radius: 4px;
+}
+
+.indexItem:hover {
+    padding: 4px;
+    background-color: var(--theme);
+    border-radius: 4px;
+    width: fit-content;
+}
+
+#trash {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    width: 100%;
+    height: 200px;
+    resize: vertical;
+}
+
+/* #source #body code {
+    user-select: all;
+    -ms-user-select: all;
+    -moz-user-select: all;
+    -webkit-user-select: all;
+} */

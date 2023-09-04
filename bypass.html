@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>bypass</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="https://www.yeshivaschools.com/wp-content/uploads/2021/01/logo-r-min.png" type="image/x-icon">
+        <link rel="stylesheet" href="./bypass.css">
+        <script src="./bypass.js" defer></script>
+    </head>
+    <body>
+        <iframe frameborder="0" width="100%" height="100%" src="https://replit.com/@aroary4444/bypass?embed=true"></iframe>
+        <button type="button" id="info">info ℹ️</button>
+        <div id="information">
+            <div id="data"></div>
+            <button type="button" id="ok">OK</button>
+        </div>
+        <!-- Information templates -->
+        <template id="intro">
+            <h1 id="title">Welcome 👋</h1>
+            <div id="body">
+                <p>
+                    Welcome to the official school bypass system for non-mobile machines.<br>
+                    <br>
+                    If you need help or you dont understand something there is a very helpful info button <span onclick="show(get('infoData'))">ℹ️</span> on the bottom left, feal free to check it out. <br>
+                    <br>
+                    If you by any chance want to contribute to this program, or if you just want to report a problem you can visit the source code <a href="http://github.com/yeshivaschools/bypass" target="_blank" rel="noopener noreferrer">here</a>. <br>
+                </p>
+                <h4>Stuff you can do:</h4>
+                <ul>
+                    <li>📼 Youtube</li>
+                    <li>📸 Instagram</li>
+                    <li>💬 Discord</li>
+                    <li>🤖 Reddit</li>
+                    <li>🎼 Spotify</li>
+                    <li>🛒 Amazon</li>
+                    <li>🌐 Lots more</li>
+                </ul>
+                <p>
+                    This website can access these websites and allow you to use them while also preventing them from coming up on your devices search history.<br>
+                    <br>
+                    Just by the way, donations are welcome! (or many other forms of appreciation) 😉<br>
+                    <br><br><br>
+                    🖋️ <i>aroary</i>
+                </p>
+            </div>
+        </template>
+        <template id="infoData">
+            <h1 id="title" >Information ℹ️</h1>
+            <div id="body">
+                <h3>⚠️ Warning</h3>
+                <p>
+                    These servers can be potentially insecure (privacy is in no way gauranteed), it is not recommended to enter personal or private information into a website in a browser on a server within this page. <br>
+                    <br>
+                    If you need to log into any sort of account it is recommended to use 2fa (two factor authentication) and the chrome browser in incognito mode.
+                </p>
+                <h3>Index</h3>
+                <ul>
+                    <li class="indexItem" onclick="show(get('intro'))">Intro</li>
+                    <li class="indexItem" onclick="show(get('help'))">Help</li>
+                    <li class="indexItem" onclick="show(get('feedback'))">Feedback</li>
+                    <li class="indexItem" onclick="show(get('licence'))">License</li>
+                    <li class="indexItem" onclick="show(get('privacy'))">Privacy</li>
+                    <li class="indexItem" onclick="show(get('source'))">Source</li>
+                </ul>
+            </div>
+        </template>
+        <template id="licence">
+            <h1 id="title">licence</h1>
+            <div id="body">
+                <p>
+                    <code>
+                        This is free and unencumbered software released into the public domain. <br>
+                        <br>
+                        Anyone is free to copy, modify, publish, use, compile, sell, or distribute this software, either in source code form or as a compiled binary, for any purpose, commercial or non-commercial, and by any means. <br>
+                        <br>
+                        In jurisdictions that recognize copyright laws, the author or authors of this software dedicate any and all copyright interest in the software to the public domain. We make this dedication for the benefit of the public at large and to the detriment of our heirs and successors. We intend this dedication to be an overt act of relinquishment in perpetuity of all present and future rights to this software under copyright law. <br>
+                        <br>
+                        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE. <br>
+                        <br>
+                        For more information, please refer to <a href="https://unlicense.org" target="_blank" rel="noopener noreferrer">https://unlicense.org</a>
+                    </code>
+                </p>
+                <br>
+                <button type="button" class="info" onclick="show(get('infoData'))">info ℹ️</button>
+            </div>
+        </template>
+        <template id="help">
+            <h1 id="title">Help</h1>
+            <div id="body">
+                <h3>General</h3>
+                <ul>
+                    <li>Bypass school internet restrinctions by opening a website in a remote server.</li>
+                    <li>Press the green play button on the bottom right to start your session, navigate between the four windows to change your browser or to view logs or output.</li>
+                    <li>Audio is supported, to use audio press the icon on the bottom left of the output window (this may slow down your settion).</li>
+                    <li>To change the browser, go to the code window (files icon on the bottom). Then open the <code>main.sh</code> file if it is not already open. (the file selctor icon is on the top right of the files window.) Then follow steps shown in the file.</li>
+                </ul>
+                <h3>AW, Snap! <code>SIGTRAP</code></h3>
+                <p>
+                    This is caused by the browser not being able to find the correct executable for the browser you are trying to use.<br>
+                    If you are encountering this error, you may need to change the browser.
+                </p>
+                <br>
+                <button type="button" class="info" onclick="show(get('infoData'))">info ℹ️</button>
+            </div>
+        </template>
+        <template id="source">
+            <h1 id="title">Help</h1>
+            <div id="body">
+                <ul>
+                    <li><strong>Github:</strong> <a href="https://github.com/yeshivaschools/bypass">https://github.com/yeshivaschools/bypass</a></li>
+                    <li><strong>Replit:</strong> <a href="https://replit.com/@aroary4444/bypass?embed=true">https://replit.com/@aroary4444/bypass?embed=true</a></li>
+                    <li><strong>Firefox:</strong> <code>firefox -browser -foreground -private</code></li>
+                    <li><strong>Chrome:</strong> <code>chromium-browser --no-sandbox --disable-logging --incognito --start-maximized --start-in-incognito</code></li>
+                </ul>
+                <br>
+                <button type="button" class="info" onclick="show(get('infoData'))">info ℹ️</button>
+            </div>
+        </template>
+        <template id="feedback">
+            <h1 id="title">Feedback</h1>
+            <div id="body">
+                <form>
+                    <textarea id="trash" required placeholder="Your unwelcome message here"></textarea>
+                    <br>
+                    <button type="reset">Reset</button>
+                    <button type="submit" disabled>Submit</button>
+                </form>
+                <a href="https://aroary.com/contact.html">https://aroary.com/contact.html</a>
+                <br>
+                <button type="button" class="info" onclick="show(get('infoData'))">info ℹ️</button>
+            </div>
+        </template>
+        <template id="privacy">
+            <h1 id="title">Privacy</h1>
+            <div id="body">
+                <p>
+                    <code>
+                        Any information entered anywhere on this page is not gauranteed to be secure, and is not gauranteed to be private.<br>
+                        <br>
+                        Enter information at your own risk, we will not be held liable for any damage caused by your information.<br>
+                        <br>
+                    </code>
+                    If you for any reason want to enter personal information we recommend using the chrome browser in incognito mode.
+                </p>
+            </div>
+        </template>
+        <!-- Information templates -->
+    </body>
+</html>
